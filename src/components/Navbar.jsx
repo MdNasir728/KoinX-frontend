@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.svg";
-import { Menubar, MenubarContent, MenubarItem, MenubarMenu, MenubarRadioItem, MenubarSeparator, MenubarShortcut, MenubarTrigger } from "./ui/menubar";
+import { Menubar, MenubarMenu, MenubarTrigger } from "./ui/menubar";
 import { Button } from "./ui/button";
 
 const Navbar = () => {
