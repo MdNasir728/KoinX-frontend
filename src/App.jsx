@@ -3,6 +3,7 @@ import Home from "./components/Hero";
 import { Feature } from "./components/Feature";
 import FeatureDetail from "./components/FeatureDetail";
 import Sentiment from "./components/Sentiment";
+import About from "./components/About";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Feature />
         <FeatureDetail />
         <Sentiment />
+        <About />
       </div>
     </div>
   );

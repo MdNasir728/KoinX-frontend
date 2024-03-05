@@ -1,4 +1,4 @@
-import Gradient from "@/lib/shared/Gradient";
+import GradientBar from "@/lib/shared/GradientBar";
 import React from "react";
 import { FaCircleExclamation } from "react-icons/fa6";
 import { fundamentals } from "@/lib/constant";
@@ -9,14 +9,14 @@ const FeatureDetail = () => {
       <h1 className="bg-inherit text-2xl font-bold mb-8">Performance</h1>
       <>
         <div className="bg-white gap-4 flex justify-between items-center mb-6">
-          <Gradient name="Today's Low" value="46,956.33" />
+          <GradientBar name="Today's Low" value="46,956.33" />
           <div className="gradient h-2 w-full bg-inherit rounded-xl" />
-          <Gradient name="Today's High" value="49,938.83" />
+          <GradientBar name="Today's High" value="49,938.83" />
         </div>
         <div className="bg-white gap-4 flex justify-between items-center mb-6">
-          <Gradient name="52W Low" value="46,956.33" />
+          <GradientBar name="52W Low" value="46,956.33" />
           <div className="gradient h-2 w-full bg-inherit rounded-xl" />
-          <Gradient name="Today's High" value="49,956.33" />
+          <GradientBar name="Today's High" value="49,956.33" />
         </div>
       </>
       <>
