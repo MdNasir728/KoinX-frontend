@@ -5,7 +5,7 @@ import { fundamentals } from "@/lib/constant";
 
 const FeatureDetail = () => {
   return (
-    <div className="bg-white rounded-lg p-6">
+    <div className="bg-white rounded-lg p-6 mb-4">
       <h1 className="bg-inherit text-2xl font-bold mb-8">Performance</h1>
       <>
         <div className="bg-white gap-4 flex justify-between items-center mb-6">
