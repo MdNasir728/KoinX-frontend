@@ -7,7 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./ui/carousel";
-import CarouselCard from "@/lib/shared/CarouselCard";
+import SharedCard from "@/lib/shared/sharedCard";
 
 const Sentiment = () => {
   return (
@@ -20,13 +20,11 @@ const Sentiment = () => {
         <Carousel className=" m-6">
           <CarouselContent>
             {Array.from({ length: 5 }).map((_, index) => (
-              <>
-                <CarouselItem key={index} className="basis-[47%]">
-                  <div className="flex p-1 w-[30rem]">
-                    <CarouselCard />
-                  </div>
-                </CarouselItem>
-              </>
+              <CarouselItem key={index} className="basis-[47%]">
+                <div className="flex p-1 w-[30rem]">
+                  <SharedCard />
+                </div>
+              </CarouselItem>
             ))}
           </CarouselContent>
           <CarouselPrevious />
@@ -35,27 +33,30 @@ const Sentiment = () => {
       </>
       <>
         <h3 className="text-xl font-semibold flex items-center gap-2 mb-4">
-          Analyst Estimates<FaCircleExclamation />
+          Analyst Estimates
+          <FaCircleExclamation />
         </h3>
         <div className="flex p-8 justify-start gap-4 items-center">
-            <div className="bg-green-100 rounded-full w-[6rem] h-[6rem] text-green-600 text-2xl flex justify-center items-center ">76%</div>
-            <div className="w-3/4">
-                <div className="flex items-center">
-                    <p className="w-[4rem]">Buy</p>
-                    <span className="h-2 rounded-lg bg-green-900 w-[76%] mr-4"/>
-                    <p>76%</p>
-                </div>
-                <div className="flex items-center">
-                    <p className="w-[4rem]">Hold</p>
-                    <span className="h-2 rounded-lg bg-gray-400 w-[8%] mr-4"/>
-                    <p>8%</p>
-                </div>
-                <div className="flex items-center">
-                    <p className="w-[4rem]">Sell</p>
-                    <span className="h-2 rounded-lg bg-red-600 w-[16%] mr-4"/>
-                    <p>16%</p>
-                </div>
+          <div className="bg-green-100 rounded-full w-[6rem] h-[6rem] text-green-600 text-2xl flex justify-center items-center ">
+            76%
+          </div>
+          <div className="w-3/4">
+            <div className="flex items-center">
+              <p className="w-[4rem]">Buy</p>
+              <span className="h-2 rounded-lg bg-green-900 w-[76%] mr-4" />
+              <p>76%</p>
             </div>
+            <div className="flex items-center">
+              <p className="w-[4rem]">Hold</p>
+              <span className="h-2 rounded-lg bg-gray-400 w-[8%] mr-4" />
+              <p>8%</p>
+            </div>
+            <div className="flex items-center">
+              <p className="w-[4rem]">Sell</p>
+              <span className="h-2 rounded-lg bg-red-600 w-[16%] mr-4" />
+              <p>16%</p>
+            </div>
+          </div>
         </div>
       </>
     </div>

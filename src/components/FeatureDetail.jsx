@@ -26,7 +26,7 @@ const FeatureDetail = () => {
         <div className="grid grid-cols-2 justify-center gap-x-4">
           {fundamentals.map((item) => {
             return (
-              <div className="flex justify-between border-b-2 p-3 border-gray-300 w-full">
+              <div key={item.name} className="flex justify-between border-b-2 p-3 border-gray-300 w-full">
                 <h5>{item.name}</h5>
                 <p>{item.value}</p>
               </div>
