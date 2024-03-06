@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="h-100vh w-100-vw">
       <Navbar />
-      <div className="flex max-sm:flex-col w-full mx-4">
-        <div className="w-2/3 gap-4">
+      <div className="flex lg:flex-row flex-col w-full px-10 gap-8">
+        <div className="lg:w-2/3 w-full gap-4">
           {/* <Home /> */}
           <Feature />
           <FeatureDetail />
