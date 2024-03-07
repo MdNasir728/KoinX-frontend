@@ -7,10 +7,10 @@ const TrendingBox = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    // queryFn({ setIsLoading, setTrendingCoin });
+    queryFn({ setIsLoading, setTrendingCoin });
   }, []);
   return (
-    <div className="flex flex-col bg-white w-full rounded-lg p-4 md:p-8 mb-4 md:gap-8 gap-4">
+    <div className="flex flex-col bg-white w-full rounded-lg p-4 md:p-4 mb-4 md:gap-8 gap-4">
       <h1 className="font-sans text-xl font-semibold">Trending Coins (24h)</h1>
       {trendingCoin?.coins?.slice(0, 4).map((coin) => (
         <CoinData

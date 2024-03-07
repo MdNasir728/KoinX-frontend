@@ -15,7 +15,7 @@ const YouMayLike = ({ trending }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    // queryFn({setIsLoading, setTrendingCoin});
+    queryFn({setIsLoading, setTrendingCoin});
   }, []);
 
   return (

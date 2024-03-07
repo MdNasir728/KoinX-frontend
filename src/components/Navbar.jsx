@@ -13,7 +13,7 @@ const Navbar = () => {
       </div>
       <Menubar className="border-none">
         <Drawer className="hidden max-sm:block">
-          <DrawerTrigger>
+          <DrawerTrigger className="sm:hidden">
             <GiHamburgerMenu size={"2rem"} />
           </DrawerTrigger>
           <DrawerContent className='p-8'>

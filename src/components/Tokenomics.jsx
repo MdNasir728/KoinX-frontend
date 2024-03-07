@@ -1,17 +1,13 @@
 import React from "react";
-import { Doughnut } from "react-chartjs-2";
+import { ResponsiveContainer, PieChart, Pie, Cell, Legend } from "recharts";
 
 const Tokenomics = () => {
-  const chartData = {
-    labels: ["Croudsell Investors", "Foundation"],
-    datasets: [
-      {
-        data: [80, 20],
-        backgroundColor: ["blue", "lightred"],
-      },
-    ],
-  };
-  const option = {};
+  const data = [
+    { name: 'Croudsale investors', value: 80 },
+    { name: 'Foundation', value: 20 },
+    // Add more data points as needed
+  ]
+
   return (
     <div className="bg-white rounded-lg md:p-6 max-md:p-2 mb-4">
       <h1 className="text-2xl font-bold mb-8">Tokenomics</h1>
@@ -19,10 +15,37 @@ const Tokenomics = () => {
         Initial Distribution
       </h3>
       <div>
-
-      {/* <Doughnut data={chartData} options={option} /> */}
+        <ResponsiveContainer width="100%" height={400}>
+          <PieChart>
+            <Pie
+              data={data}
+              dataKey="value"
+              cx="50%"
+              cy="50%"
+              outerRadius={80}
+              fill="red"
+              label
+            >
+              {data.map((entry, index) => (
+                <Cell
+                  key={`cell-${index}`}
+                  fill={`#${Math.floor(Math.random() * 16777215).toString(16)}`}
+                />
+              ))}
+            </Pie>
+            <Legend verticalAlign="bottom" height={36} />
+          </PieChart>
+        </ResponsiveContainer>
       </div>
-      <p className="font-medium text-lg text-zinc-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fugit, atque aspernatur placeat expedita enim a voluptatibus nulla blanditiis repellat quod laboriosam eveniet harum natus doloribus eaque consequuntur repellendus corrupti ea distinctio maiores molestias voluptatem! Natus sed delectus adipisci eaque in, vitae laboriosam quos veritatis sequi minus nulla facere cumque accusantium beatae ratione ducimus illo quia culpa, quo similique alias.</p>
+      <p className="font-medium text-lg text-zinc-700">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fugit,
+        atque aspernatur placeat expedita enim a voluptatibus nulla blanditiis
+        repellat quod laboriosam eveniet harum natus doloribus eaque
+        consequuntur repellendus corrupti ea distinctio maiores molestias
+        voluptatem! Natus sed delectus adipisci eaque in, vitae laboriosam quos
+        veritatis sequi minus nulla facere cumque accusantium beatae ratione
+        ducimus illo quia culpa, quo similique alias.
+      </p>
     </div>
   );
 };

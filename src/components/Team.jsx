@@ -15,8 +15,8 @@ const Team = () => {
       </p>
       <div className="flex flex-col gap-4 mt-4">
         <SharedCard team="yes" img={person_1} name="John Doe" />
-        <SharedCard team="yes" img={person_2} name="Peter Parker" />
-        <SharedCard team="yes" img={person_3} name="Tony Stark" />
+        <SharedCard team="yes" img={person_2} name="Peter Park" />
+        <SharedCard team="yes" img={person_3} name="Iron Man" />
       </div>
     </div>
   );

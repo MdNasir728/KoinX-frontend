@@ -21,8 +21,8 @@ function TradingViewWidget() {
             ]
           ],
           "chartOnly": false,
-          // "width": "900",
-          // "height": "510",
+          "width": "100%",
+          "height": "400",
           "locale": "en",
           "colorTheme": "light",
           "autosize": true,
@@ -56,7 +56,7 @@ function TradingViewWidget() {
   }, []);
 
   return (
-    <div className="bg-white rounded-lg p-6 w-full overflow-hidden">
+    <div className="bg-white rounded-lg p-6 pb-2 w-full overflow-hidden">
       <div className="tradingview-widget-container h-full" ref={container} />
     </div>
   );

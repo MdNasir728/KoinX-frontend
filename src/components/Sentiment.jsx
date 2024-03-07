@@ -17,11 +17,11 @@ const Sentiment = () => {
         <h3 className="text-xl font-semibold flex items-center gap-2 mb-4">
           Key Events <FaCircleExclamation />
         </h3>
-        <Carousel className=" lg:m-6 max-md:overflow-x-auto overflow-hidden">
-          <CarouselContent>
+        <Carousel className=" lg:m-2 overflow-hidden">
+          <CarouselContent className='p-0'>
             {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index} className="lg:basis-[47%] md:basis-[60%] basis-full">
-                <div className="flex p-1 md:w-[30rem] w-full">
+              <CarouselItem key={index} className="min-w-[25rem] md:basis-[47%] basis-full">
+                <div className="flex md:w-[30rem] w-full">
                   <SharedCard />
                 </div>
               </CarouselItem>

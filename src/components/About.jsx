@@ -1,5 +1,5 @@
 import React from "react";
-import bitcoin from "../assets/bitcoin.jpg";
+import bitcoin3 from "../assets/bitcoin3.jpg";
 import bitcoin2 from "../assets/bitcoin2.jpg";
 import GradientCard from "@/lib/shared/GradientCard";
 
@@ -48,7 +48,7 @@ const About = () => {
         Already Holding Bitcoin?
       </h1>
       <div className="flex md:flex-row md:justify-evenly flex-col gap-4">
-        <GradientCard img={bitcoin} text="Calculate Your Profit" />
+        <GradientCard img={bitcoin3} text="Calculate Your Profit" />
         <GradientCard img={bitcoin2} text="Calculate Your Tex Liability" />
       </div>
       <div className=" my-4 h-[1px] bg-gray-200 w-full" />
