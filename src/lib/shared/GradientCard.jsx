@@ -5,7 +5,7 @@ import { IoArrowForwardSharp } from "react-icons/io5";
 
 const GradientCard = ({img, text}) => {
   return (
-    <Card className={`${text ==='Calculate Your Profit' ? 'gradient2' : 'gradient3'} p-4 flex w-[25rem] h-[10rem]`}>
+    <Card className={`${text ==='Calculate Your Profit' ? 'gradient2' : 'gradient3'} p-4 flex w-full md:w-[25rem] h-[10rem]`}>
       <img
         className="w-[8rem] h-[8rem] rounded-xl bg-cover bg-no-repeat"
         src={img}

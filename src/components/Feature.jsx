@@ -11,7 +11,7 @@ export function Feature() {
     "Tokenomics",
   ];
   return (
-    <Tabs className="flex justify-start py-6 pb-2">
+    <Tabs className="flex justify-start py-6 pb-2 overflow-scroll">
       <TabsList className="flex bg-inherit">
         {features.map((feature) => (
           <TabsTrigger key={feature} value={feature}>

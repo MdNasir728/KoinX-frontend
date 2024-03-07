@@ -13,7 +13,7 @@ const Tokenomics = () => {
   };
   const option = {};
   return (
-    <div className="bg-white rounded-lg p-8 mb-4">
+    <div className="bg-white rounded-lg md:p-6 max-md:p-2 mb-4">
       <h1 className="text-2xl font-bold mb-8">Tokenomics</h1>
       <h3 className="text-xl font-semibold flex items-center gap-2 mb-4">
         Initial Distribution

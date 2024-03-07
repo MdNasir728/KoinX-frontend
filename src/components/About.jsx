@@ -5,7 +5,7 @@ import GradientCard from "@/lib/shared/GradientCard";
 
 const About = () => {
   return (
-    <div className="bg-white rounded-lg py-4 px-8 mb-6 flex flex-col gap-y-4 font-medium text-lg text-zinc-700">
+    <div className="bg-white rounded-lg md:p-6 max-md:p-2 mb-4 flex flex-col gap-y-4 font-medium text-lg text-zinc-700">
       <h1 className="text-2xl font-bold mb-2 text-black">About Bitcoin</h1>
       <h2 className="text-xl font-bold text-black">What is Bitcoin?</h2>
       <p>
@@ -47,7 +47,7 @@ const About = () => {
       <h1 className="text-2xl font-semibold mb-2 text-black">
         Already Holding Bitcoin?
       </h1>
-      <div className="flex justify-evenly">
+      <div className="flex md:flex-row md:justify-evenly flex-col gap-4">
         <GradientCard img={bitcoin} text="Calculate Your Profit" />
         <GradientCard img={bitcoin2} text="Calculate Your Tex Liability" />
       </div>
